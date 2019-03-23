@@ -16,14 +16,14 @@ def BaseConvert(number, fromdigits, todigits, ignore_negative=True):
         neg = 1
     else:
         neg = 0
-    x = long(0)
+    x = int(0)
     for digit in str(number):
         x = x * len(fromdigits) + fromdigits.index(digit)
  
     res = ''
     while x > 0:
         digit = x % len(todigits)
-        res = todigits[digit] + res
+        res = todigits[int(digit)] + res
         x /= len(todigits)
  
     if neg:
@@ -53,9 +53,9 @@ rng = AddHyphens('CN' + randomstring(18, '123456789ABCDEFGHJKLMNPQRTVWXY'))
 print ('License id: ' + rng)
 act30 = input('Enter request code:')
 lichash = act30
-hasher = sha.new()
-hasher.update(act30)
-hasher.update(rng)
+hasher = hashlib.sha1()
+hasher.update(act30.encode('ascii'))
+hasher.update(rng.encode('ascii'))
 lichash = AddHyphens(lichash[:3] + SHAToBase30(hasher.hexdigest().upper()))
 part5 = format(loop(23, lichash), '05x') + format(loop(161, lichash), '05x') + format(loop(47, lichash),'05x') + format(loop(9, lichash), '05x')
                                                                                       
