@@ -1,6 +1,6 @@
 import string
 import random
-import sha
+import hashlib
  
 BASE16 = '0123456789ABCDEF'
 BASE30 = '123456789ABCDEFGHJKLMNPQRTVWXY'
@@ -50,8 +50,8 @@ def loop(ecx, lichash):
     return part
  
 rng = AddHyphens('CN' + randomstring(18, '123456789ABCDEFGHJKLMNPQRTVWXY'))
-print 'License id: ' + rng
-act30 = raw_input('Enter request code:')
+print ('License id: ' + rng)
+act30 = input('Enter request code:')
 lichash = act30
 hasher = sha.new()
 hasher.update(act30)
@@ -65,4 +65,4 @@ while len(part5) < 17:
     part5 = '1' + part5
  
 part5 = 'AXX' + part5
-print 'Activation code: ' + AddHyphens(part5)
+print ('Activation code: ' + AddHyphens(part5))
