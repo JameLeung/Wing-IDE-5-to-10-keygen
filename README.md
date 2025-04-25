@@ -1,5 +1,5 @@
-# Wing-IDE-7-keygen
-Keygen for activation Wing IDE V7
+# Wing-IDE-6 to 9 -keygen
+Keygen for activation Wing IDE from 6 to 9 
 
 Did some modification on the coding as it is used deprecated sha library and python 2.
 
