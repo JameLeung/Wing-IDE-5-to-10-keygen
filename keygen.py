@@ -61,7 +61,7 @@ def loop(ecx, lichash):
         part = ecx * part + ord(c) & 1048575
     return part
  
-g_version_list = ('10.X.X','9.X.X','8.X.X', '7.X.X', '6.X.X', '5.X.X')
+g_version_list = ('10.X.X', '9.X.X', '8.X.X', '7.X.X', '6.X.X', '5.X.X')
 g_version_magics = {
     '5.X.X': [7, 123, 23, 87],
     '6.X.X': [23, 161, 47, 9],
@@ -93,7 +93,7 @@ def CalcActivationCode(args):
     lichash = AddHyphens(requestCode[:3] + SHAToBase30(hashResult))
  
     versionMagic = None
-    # Supported crack WingIDE Pro version list : 5.x.x, 6.x.x, 7.x.x
+    # Supported crack WingIDE Pro version list : 5.x.x, 6.x.x, 7.x.x, 8.x.x, 9.x.x, 10.x.x
     wingIDEProVerStr = args.VersionInfo.get()
     print ('Cracking WingIDE Version : ' + wingIDEProVerStr)
     if wingIDEProVerStr in g_version_magics.keys():
@@ -121,7 +121,7 @@ class Application(Frame):
     def __init__(self, master=None):
         super().__init__(master)
         self.master = master
-        self.master.title('WingIDE Pro Keygen(5, 6, 7)')
+        self.master.title('WingIDE Pro Keygen(version 5-10)')
         self.master.geometry('350x180')
         self.create_widgets()
         pass
