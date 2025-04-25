@@ -1,3 +1,4 @@
+#Updated by Jame - 2025 04 25
 import os
 import string
 import random
@@ -60,13 +61,14 @@ def loop(ecx, lichash):
         part = ecx * part + ord(c) & 1048575
     return part
  
-g_version_list = ('9.0.4','8.X.X', '7.X.X', '6.X.X', '5.X.X')
+g_version_list = ('10.X.X','9.X.X','8.X.X', '7.X.X', '6.X.X', '5.X.X')
 g_version_magics = {
     '5.X.X': [7, 123, 23, 87],
     '6.X.X': [23, 161, 47, 9],
     '7.X.X': [221, 13, 93, 27],
     '8.X.X': [179, 95, 45, 245],
-    '9.0.4': [123, 17, 42, 7],
+    '9.X.X': [123, 17, 42, 7],
+    '10.X.X': [102, 99, 107, 117]
 }
  
  
