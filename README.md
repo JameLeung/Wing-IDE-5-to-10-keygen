@@ -1,5 +1,5 @@
-# Wing-IDE-6 to 9 -keygen
-Keygen for activation Wing IDE from 6 to 9 
+# Wing-IDE-5 to 10-keygen
+Keygen for activation Wing IDE from 5 to 10 
 
 Did some modification on the coding as it is used deprecated sha library and python 2.
 
@@ -18,3 +18,9 @@ $python keygen.py
 
 Found the license id generated could be invalid sometimes and need to regenerate.
 Need patient to rerun. 
+
+Also, tried to test fro the Wing IDE 5 to 10 and it is wokring now.
+
+Why I try to generate it becasue I want to test for the reverse engineering on the licnese code issue, so I can work on this simialr mechianism to some other porduct in the future.
+
+Please reminder it is for educational purpose only, not for sale please. I shall not take any liability on this matter.
